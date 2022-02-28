@@ -1,0 +1,125 @@
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 10vh 2fr 55vw 2fr 5vh ;
+    background-color: #121214;
+    margin: none;
+}
+
+.logo{
+    height: 10vh;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    font-size: large;
+    color: white;
+}
+.menu-link{
+    height: 10vh;
+    grid-column: 4/5;
+    margin: 0%;
+}
+.menu-link ul{
+    height: 3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+li{   
+    float: left;
+    color: #a0a6df;
+    text-align: center;
+    padding: 1vw;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px 10px 5px 10px;  
+    transition: all 0.2s;
+}
+li:hover{
+    height: 2vh;
+    background-color: #b0b1be86;
+    opacity: 1;
+
+}
+.navbarLink{
+    text-decoration: none;
+    color: white;
+}
+.navbarLink:hover{
+    text-decoration: none;
+    color: black;
+}
+.hamburger-menu{
+    display: none;
+    align-items: left;
+}
+
+
+@media (max-width: 998px) {
+    .navbar{
+        height: 10vh;
+        grid-template-columns: 1fr 80vw 2fr 5vh ;
+        margin: none;
+    }
+    .navbarLink{
+        text-decoration: none;
+        color: black;
+        font-size: 5vw;
+    }
+  
+    .menu-link {
+      display: none;
+    }
+  
+    .logo{
+        height: 1rem;
+        align-items: right;
+    }
+  
+    .mobile-menu-link {
+      margin-top: 10vh;
+      width: 80vw;
+      grid-column: 2/4;
+      position: relative;
+      z-index: 99;
+    }
+  
+    .mobile-menu-link {
+      background-color: rgb(88, 88, 88);
+      opacity: 0.95;
+      height: 20rem;
+      display: grid;
+      grid-column: 2/5;
+      align-items: center;
+      padding-left: 3rem;
+      transition: all 0.2s linear;
+      transform-origin: top;
+    }
+  
+    .mobile-menu-link ul {
+      height: 20rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .mobile-menu-link ul li:first-child {
+      transition-delay: 0.2s;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      font-size: 2rem;
+      grid-column: 4/5;
+      margin:auto;
+      color:white;
+      margin-right: 2vw;
+    }
+    .hamburger-menu a{
+        color:white;
+      }
+  }

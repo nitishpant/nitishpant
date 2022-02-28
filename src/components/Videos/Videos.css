@@ -1,0 +1,19 @@
+.Videos{
+    height: 80vh;
+    width: 100vw;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 10vh;
+}
+.imgBox{
+    display: flex;
+    margin-left: 20vh;
+}
+.videoIcon{
+    height: 60vh;
+    transform: scale(1.5);
+    position: fixed;
+}
