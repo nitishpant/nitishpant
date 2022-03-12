@@ -61,7 +61,7 @@ li:hover{
 @media (max-width: 998px) {
     .navbar{
         height: 10vh;
-        grid-template-columns: 1fr 80vw 2fr 5vh ;
+        grid-template-columns: 1fr 80vw 1fr 5vh ;
         margin: none;
     }
     .navbarLink{
@@ -113,13 +113,12 @@ li:hover{
   
     .hamburger-menu {
       display: block;
-      font-size: 2rem;
       grid-column: 4/5;
       margin:auto;
       color:white;
-      margin-right: 2vw;
+      margin-right: 10vw;
     }
     .hamburger-menu a{
-        color:white;
+        color:rgb(216, 216, 216);
       }
   }

@@ -16,22 +16,22 @@ function Navbar() {
             <div className={showIcons? "menu-link mobile-menu-link": "menu-link"}>
                 <ul>
                     <li>
-                        <Link className="navbarLink" to='/'>Home</Link>
+                        <Link className="navbarLink" to='/' onClick={()=>setshowIcons(!showIcons)}>Home</Link>
                     </li>
                     <li>
-                        <Link className="navbarLink" to='/Hire'>Hire</Link>
+                        <Link className="navbarLink" to='/Hire' onClick={()=>setshowIcons(!showIcons)}>Contact</Link>
                     </li>
                     <li>
-                        <Link className="navbarLink" to='/Projects'>Projects</Link>
+                        <Link className="navbarLink" to='/Projects' onClick={()=>setshowIcons(!showIcons)}>Projects</Link>
                     </li>
                     <li>
-                        <Link className="navbarLink" to='/Videos'>Videos</Link>
+                        <Link className="navbarLink" to='/Videos' onClick={()=>setshowIcons(!showIcons)} >Videos</Link>
                     </li>
                 </ul>
             </div>
                 <div className="hamburger-menu">
                     <a href="#" onClick={()=>setshowIcons(!showIcons)}>
-                        <GiHamburgerMenu/>
+                        <GiHamburgerMenu size={40}/>
                     </a>
                 </div>
         </nav>

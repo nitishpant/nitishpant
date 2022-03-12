@@ -1,5 +1,5 @@
 .Projects{
-    height: 80vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -8,4 +8,83 @@
     text-align: center;
     font-size: 10vh;
 }
+.projectsdiv{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.116);
+}
+.projectHeading{
+    color:white;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+}
+.projectDesc{
+    margin-top: 2vw;
+    font-size: 1vw;
+    font-weight: normal;
+}
+.techStack{
+    font-weight: bold;
+
+}
+.liveDemo{
+    background-color: rgb(76, 76, 243);
+    width: 15vw;
+    height: 2.5vw;
+    margin: auto;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    font-size: 1.6vw;
+}
+.github{
+    background-color: rgb(72, 128, 60);
+    width: 15vw;
+    height: 2.5vw;
+    margin: auto;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    font-size: 1.6vw;
+}
+
+
+@media (max-width: 700px) {
+    
+.projectsdiv{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.projectHeading{
+    color:white;
+    font-size: 5.5vw;
+    font-weight: bold;
+}
+.projectDesc{
+    margin-top: 4vh;
+    font-size: 3vw;
+    font-weight: normal;
+}
+.liveDemo{
+    background-color: rgb(76, 76, 243);
+    width: 40vw;
+    height: 7vw;
+    margin: auto;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    font-size: 5vw;
+}
+.github{
+    background-color: rgb(72, 128, 60);
+    width: 40vw;
+    height: 7vw;
+    margin: auto;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    font-size: 5vw;
+}
+
+    
+  }
 
